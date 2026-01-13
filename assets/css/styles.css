@@ -55,6 +55,12 @@ i {
     width: 100%;
     padding: 0.5rem 1rem;
 }
+
+.header_toggle{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .header_brand .brand_logo{
     width: 3.25rem;
     height: 3.25rem;
@@ -91,8 +97,10 @@ i {
     gap: .625rem;
 }
 
-.menu__link:active .menu__icon, 
-.menu__link:active .menu__text{
+.menu__link.active .menu__icon, 
+.menu__link.active .menu__text,
+.menu__link:hover .menu__icon, 
+.menu__link:hover .menu__text{
     color: #FFFFFF;
     font-weight: 600;
 }
@@ -111,8 +119,40 @@ i {
     text-transform: uppercase;
 }
 
+.header__nav {
+    display: none;
+}
+
+.menu--principal{
+    gap: 1rem;
+}
+
 @media (min-width: 768px) {
-    .menu--mobile {
-        display: none;
-    }
+
+.header      {
+    border-bottom: 1px solid var(--text);
+    background-color: var(--primary);
+    padding: 1rem 6rem;
+}
+
+.nav--mobile {
+    display: none;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav,
+.header__toggle{
+    min-width: 30%;
+}
+}
+
+@media (min-width: 1440px) {
+.header      {
+    border-bottom: 1px solid var(--text);
+    background-color: var(--primary);
+    padding: 1rem 4rem;
+}
 }
