@@ -348,7 +348,7 @@ footer p {
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 h2{
@@ -464,7 +464,7 @@ h2{
 
 @media (min-width: 1440px){
 h1{
-    font-size: 6.25rem;
+    font-size: 3.25rem;
 }
 
 h2{
@@ -479,8 +479,15 @@ h2{
 
 .main{
     padding: 12rem 15rem 2rem;
-}   
+}
 
+.main__content1{
+    margin-left: 15rem;
+}
+
+.menu--principal{
+    margin-left: 12.3rem;
+}
 .skills{
     padding: 10em 15rem 4rem;
 }
