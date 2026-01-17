@@ -100,6 +100,7 @@ h1, h2, h3{
 .header_brand .brand_logo{
     width: 3.25rem;
     height: 3.25rem;
+    border-radius: 0.5rem;
 }
 
 #toggleTheme:hover{
@@ -315,6 +316,39 @@ main {
     justify-content: center;
 }
 
+.sobre{
+    display: flex;
+    flex-direction: column;
+}
+
+.card__foto{
+    display: flex;
+    width: 17rem;
+    height: 17rem;
+    border-radius: 0.5rem;  
+    margin-left: 1.5rem;
+}
+
+.card__sobre{
+   display: flex;
+   font-size: 1rem;
+   color: var(--text);
+   margin-right: 4rem;
+}
+
+.card__sobre--skills{
+    display: flex;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.sobre__container{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+}
+
 footer{
     margin-bottom: 5rem;
 }
@@ -332,6 +366,7 @@ footer p {
     border-bottom: 1px solid var(--text);
     background-color: var(--bg-soft);
     padding: 1rem 6rem;
+    position: fixed;
 }
 
 .nav--mobile {
@@ -364,6 +399,7 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 7rem;
 }
    
 .main__content1 .btn{
